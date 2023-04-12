@@ -24,8 +24,24 @@
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h2>Lasith Chamika Viduranga</h2>
-            <h3> </h3>
+            <h3> and I am a <span id="element"></span></h3>
+            <p></p>
+                <div class="social_media">
+                    
+                </div>
         </div>
     </section>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Frontend developer', 'Mobile Application developer','Backend developer'],
+      typeSpeed: 150,
+      backSpeed:150,
+      loop:true
+    });
+  </script>
+   
 </body>
 </html>

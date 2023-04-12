@@ -55,4 +55,17 @@ menu-icon{
     color: var(--text-color);
     display: none;
     
+}#home{
+    padding-top: 150px;
+    justify-content: space-between;
+    align-items: center;
+}.auto-typed{
+    color: var(--text-color);
+}.home-content{
+    font-size: 3rem;
+    color: var(--text-color);
+    width: 50%;
+    float: left;
+}#element{
+    color: var(--main-color);
 }
