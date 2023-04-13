@@ -224,7 +224,74 @@ menu-icon{
     border-radius: 16px;
     background: var(--bg-color);
     z-index: 1;
+  }.Services{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    gap: 40px 60px;
   }
+  .Services .drop{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05),
+    25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px rgba(212, 0, 212, 0.9);
+}.Services .drop:nth-child(2){
+    border-radius: 57% 43% 43% 57% / 43% 43% 57% 57%;
+}.Services .drop:nth-child(3){
+    border-radius: 61% 39% 52% 48% / 44% 59% 41% 56%;
+}.Services .drop:nth-child(4){
+    border-radius: 35% 65% 31% 69% / 57% 59% 41% 43%;
+}.Services .drop:hover{
+    border-radius: 50%;
+    transition: 1s;
+}
+.Services .drop::before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    width: 35px;
+    height: 35px;
+    background: rgba(61, 70, 87, 0.2);;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+  #Services h2 {
+    text-align: right;
+    position: relative;
+    font-size: 6em;
+    Letter-spacing: 15px; 
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 30px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    Line-height: 0.70em;
+    outline: none;
+    animation: animate1 5s linear infinite;
+  }
+  @keyframes animate1{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%
+    {
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+}
   .Portfolio{
     position: relative;
     display: flex;
@@ -244,10 +311,9 @@ menu-icon{
     inset -20px -20px 25px rgba(255, 255, 255, 0.9);
 }
 #Portfolio{
-    padding-top: 600px;
+    padding-top: 200px;
 }
 #Portfolio h2 {
-    text-align: right;
     position: relative;
     font-size: 6em;
     Letter-spacing: 15px; 
@@ -283,6 +349,7 @@ menu-icon{
     border-radius: 35% 65% 31% 69% / 57% 59% 41% 43%;
 }.Portfolio .drop:hover{
     border-radius: 50%;
+    transition: 1s;
 }.Portfolio .drop::before{
     content: '';
     position: absolute;
