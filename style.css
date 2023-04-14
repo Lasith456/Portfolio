@@ -43,7 +43,7 @@ body{
 }
 .navbar a:hover,
 .navbar a.active {
-    color: var(--main-color);
+    color: var(--bg-color);
 }
 menu-icon{
     font-size: 3.6rem;
@@ -399,7 +399,8 @@ menu-icon{
     background: rgba(61, 70, 87, 0.05);
     pointer-events: none;
     transform: skewX(-145deg);
-}.contact .container h3{
+}.contact h3{
+    position: relative;
     width: 100%;
     text-align: center;
     color: var(--text-color);
@@ -501,4 +502,22 @@ a:hover{
     Line-height: 0.70em;
     outline: none;
     animation: animate1 5s linear infinite;
-  }
+}.neon1{
+    position: relative;
+    display: inline-block;
+    margin: 40px 0;
+    color: var(--main-color);
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    float: right;
+}
+.neon1:hover{
+    background-color: #d400d4;
+    color: #050801;
+    box-shadow: 0 0 5px #d400d4,
+                0 0 25px #d400d4,
+                0 0 50px #d400d4,
+                0 0 200px #d400d4;
+}
