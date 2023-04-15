@@ -182,7 +182,9 @@ menu-icon{
   }
   
   #about img {
-    max-width: 100%;
+    width: 275px;
+    height: 390px;
+    border-radius: 20px;
   }
   .col-md-6{
     padding: 10px;
