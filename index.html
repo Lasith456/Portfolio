@@ -10,7 +10,7 @@
 </head>
 <body>
     <Header class="header">
-      <h2><a href="" class="neon1">Download cv</a></h2>
+      <h2><a href="img/LasithCv.pdf" download class="neon1">Download cv</a></h2>
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -50,8 +50,31 @@
           </div>
           <div class="col-md-61">
             <p>Hi, I'm Lasith Viduranga, a web developer based in Srilanka. I specialize in creating dynamic and responsive websites using the latest web technologies. With over 5 years of experience in the industry, I have worked with clients from various industries to create beautiful and functional websites that meet their business needs.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-            
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('SKILLS')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('EDUCATION')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="SKILLS">
+              <ul>
+                <li><span>UI/UX</span><br />Designing web/app interfaces</li>
+                <li><span>Web development</span><br />Web app development</li>
+                <li><span>Mobile app development</span><br />Using flutter</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="EDUCATION">
+              <ul>
+                <li><span>Primary</span><br />Bandarawela Central Collage</li>
+                <li>
+                  <span>Higher Education</span><br />Informatics Institute of
+                  Technology(Bse software engineering)
+                </li>
+                <li>
+                  <span>Open learning platform(University of moratuwa)</span><br />Python for beginners<br>Web design for beginners<br>Programming in Python<br>Front-End Web Development
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -167,6 +190,22 @@
       backSpeed:100,
       loop:true
     });
+  </script>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
   </script>
    
 </body>

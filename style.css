@@ -6,7 +6,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-
+    font-family: 'Poppins', sans-serif;
 }
 :root{
     --bg-color: #1f242d;
@@ -376,7 +376,6 @@ menu-icon{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 .contact .container{
     position: relative;
@@ -392,7 +391,6 @@ menu-icon{
     border-radius: 10px;
     overflow: hidden;
     backdrop-filter: blur(25px);
-    
 }.contact .container::before{
     content: '';
     position: absolute;
@@ -403,6 +401,7 @@ menu-icon{
     background: rgba(61, 70, 87, 0.05);
     pointer-events: none;
     transform: skewX(-145deg);
+    
 }.contact h3{
     position: relative;
     width: 100%;
@@ -534,4 +533,42 @@ a:hover{
                 0 0 25px #d400d4,
                 0 0 50px #d400d4,
                 0 0 200px #d400d4;
+}.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #d400d4;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #d400d4;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+
+}
+.tab-contents.active-tab{
+    display: block;
 }
