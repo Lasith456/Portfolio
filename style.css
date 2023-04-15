@@ -371,9 +371,10 @@ menu-icon{
     opacity: 0.9;
 }.contact{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    
 }
 .contact .container{
     position: relative;
@@ -389,6 +390,7 @@ menu-icon{
     border-radius: 10px;
     overflow: hidden;
     backdrop-filter: blur(25px);
+    
 }.contact .container::before{
     content: '';
     position: absolute;
@@ -491,6 +493,8 @@ a:hover{
                 0 0 50px #03e9f4,
                 0 0 200px #03e9f4;
 }#contact h2 {
+    padding-top: 50px;
+    text-align: end;
     position: relative;
     font-size: 6em;
     Letter-spacing: 15px; 
@@ -503,15 +507,23 @@ a:hover{
     outline: none;
     animation: animate1 5s linear infinite;
 }.neon1{
+    text-align: end;
     position: relative;
+    font-size: 6em;
+    Letter-spacing: 15px; 
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    Line-height: 0.70em;
+    outline: none;
+    animation: animate1 5s linear infinite;
     display: inline-block;
     margin: 40px 0;
-    color: var(--main-color);
     font-size: 24px;
     text-decoration: none;
     transition: 0.5s;
     letter-spacing: 4px;
-    float: right;
 }
 .neon1:hover{
     background-color: #d400d4;
