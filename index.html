@@ -49,7 +49,7 @@
             </span>
           </div>
           <div class="col-md-61">
-            <p>Hi, I'm Lasith Viduranga, a web developer based in Srilanka. I specialize in creating dynamic and responsive websites using the latest web technologies. With over 5 years of experience in the industry, I have worked with clients from various industries to create beautiful and functional websites that meet their business needs.</p>
+            <p>Hi, I'm Lasith Viduranga, a web developer based in Srilanka. I specialize in creating dynamic and responsive websites using the latest web technologies.A highly motivated student currently pursuing a Software engineering. My studies have given me a strong foundation in communication, Computer languages and Computer software. I aim to leverage these skills and further pursue my passion for software development. I have complete my university first year perfectly and now I am studying my second year.</p>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('SKILLS')">
                 Skills
@@ -68,7 +68,7 @@
                 <li><span>Primary</span><br />Bandarawela Central Collage</li>
                 <li>
                   <span>Higher Education</span><br />Informatics Institute of
-                  Technology(Bse software engineering)
+                  Technology(Beng software engineering)
                 </li>
                 <li>
                   <span>Open learning platform(University of moratuwa)</span><br />Python for beginners<br>Web design for beginners<br>Programming in Python<br>Front-End Web Development
@@ -109,22 +109,41 @@
       <div class="drop" >
         <div class="content">
             <h2 style="font-size: 2rem;text-align:right;">01</h2>
-            <p>Medical application</p>
-            <a href="#" class="btn btn-primary">show demo video</a>
+            <h4 style="color:dodgerblue;">Medicine application</h4>
+          <p>This is buisness wise project and it's not compleated. This application create using flutter.It's support ios and android.</p>
+            <a href="https://github.com/Lasith456/Medicineapp.git" class="btn btn-primary">Go github repository</a>
         </div>
       </div>
       <div class="drop">
         <div class="content">
           <h2 style="font-size: 2rem; text-align:right;">02</h2>
-            <p>Westminster skin consultation</p>
-            <a href="#" class="btn btn-primary">show demo video</a>
+            <h4 style="color:dodgerblue;">Qonvo Meeting platform Web application</h4>
+            <p>Group project with my university firends and used HTML, CSS , Java script languages.</p>
+            <a href="https://qonvo.azurewebsites.net/" class="btn btn-primary">Go website</a>
         </div>
       </div>
       <div class="drop" >
         <div class="content">
           <h2 style="font-size: 2rem;text-align:right;">03</h2>
-            <p>School management system</p>
-            <a href="#" class="btn btn-primary">show demo video</a>
+          <h4 style="color:dodgerblue;">My Portfolio</h4>
+          <p>Create my own Portfolio using HTML, CSS , Java script languages.</p>
+            <a href="#" class="btn btn-primary">Go website</a>
+        </div>
+      </div>
+      <div class="drop" >
+        <div class="content">
+          <h2 style="font-size: 2rem;text-align:right;">04</h2>
+          <h4 style="color:dodgerblue;">BMI Calculator App</h4>
+          <p>.This is my first mobile application. This application create using flutter.It's support ios and android.</p>
+            <a href="https://github.com/Lasith456/Flutter.git" class="btn btn-primary">Go github repository</a>
+        </div>
+      </div>
+      <div class="drop" >
+        <div class="content">
+          <h2 style="font-size: 2rem;text-align:right;">05</h2>
+          <h4 style="color:dodgerblue;">School Management system</h4>
+          <p>I'll use to create this project using codeigniter(php).It's in not compleated.Because i'll doing this project using course.</p>
+            <a href="#" class="btn btn-primary">Go live demo</a>
         </div>
       </div>
     </section>
@@ -132,10 +151,11 @@
       <h2 >Contacts</h2>
       <div class="container">
         <h3>Contact Form</h3>
+        <form id="contact-form">
       <div class="row100">
         <div class="col">
           <div class="inputbox">
-            <input type="text" name="" required="required">
+            <input type="text" name="name" required="required">
             <span class="text">First Name</span>
             <span class="line"></span>
           </div>
@@ -151,7 +171,7 @@
       <div class="row100">
         <div class="col">
           <div class="inputbox">
-            <input type="text" name="" required="required">
+            <input type="text" name="email" required="required">
             <span class="text">Email</span>
             <span class="line"></span>
           </div>
@@ -167,7 +187,7 @@
       <div class="row100">
         <div class="col">
           <div class="inputbox">
-            <textarea required="required"></textarea>
+            <textarea required="required" name="message"></textarea>
             <span class="text">Type your message here..</span>
             <span class="line"></span>
           </div>
@@ -175,9 +195,10 @@
       </div>
       <div class="row100">
         <div class="col">
-          <a href="" class="neon">Submit</a>
+          <a href="" type="submit" value="Send" class="neon">Submit</a>
         </div>
       </div>
+    </form>
     </div>
     </section>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
@@ -207,6 +228,22 @@
       document.getElementById(tabname).classList.add("active-tab");
     }
   </script>
+  <script>
+		document.getElementById('contact-form').addEventListener('submit', function(event) {
+			event.preventDefault();
+			sendEmail();
+		});
+
+		function sendEmail() {
+			var name = document.getElementById('name').value;
+			var email = document.getElementById('email').value;
+			var message = document.getElementById('message').value;
+			var subject = 'New contact form submission from ' + name;
+			var body = 'Name: ' + name + '%0D%0AEmail: ' + email + '%0D%0AMessage: ' + message;
+
+			window.location.href = 'mailto:lcviduranga456@gmail.com=' + subject + '&body=' + body;
+		}
+	</script>
    
 </body>
 </html>
