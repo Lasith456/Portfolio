@@ -358,6 +358,10 @@ menu-icon{
     border-radius: 61% 39% 52% 48% / 44% 59% 41% 56%;
 }.Portfolio .drop:nth-child(4){
     border-radius: 35% 65% 31% 69% / 57% 59% 41% 43%;
+}.Portfolio .drop:nth-child(5){
+    border-radius: 35% 65% 31% 69% / 57% 59% 41% 43%;
+}.Portfolio .drop:nth-child(6){
+    border-radius: 35% 65% 31% 69% / 57% 59% 41% 43%;
 }.Portfolio .drop:hover{
     border-radius: 50%;
     transition: 1s;
@@ -484,7 +488,6 @@ menu-icon{
     text-decoration: none;
     transition: 0.5s;
     letter-spacing: 4px;
-    float: right;
 }
 a:hover{
     background-color: #03e9f4;
@@ -508,23 +511,12 @@ a:hover{
     outline: none;
     animation: animate1 5s linear infinite;
 }.neon1{
+    padding: 5px;
     text-align: end;
     position: relative;
-    font-size: 6em;
-    Letter-spacing: 15px; 
-    color: #0e3742;
-    text-transform: uppercase;
-    width: 100%;
-    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
-    Line-height: 0.70em;
-    outline: none;
-    animation: animate1 5s linear infinite;
-    display: inline-block;
-    margin: 40px 0;
-    font-size: 24px;
-    text-decoration: none;
-    transition: 0.5s;
-    letter-spacing: 4px;
+    color: var(--text-color);
+    background-color:var(--main-color);
+    border-radius: 20px;
 }
 .neon1:hover{
     background-color: #d400d4;
@@ -532,7 +524,7 @@ a:hover{
     box-shadow: 0 0 5px #d400d4,
                 0 0 25px #d400d4,
                 0 0 50px #d400d4,
-                0 0 200px #d400d4;
+                0 0 100px #d400d4;
 }.tab-titles{
     display: flex;
     margin: 20px 0 40px;
