@@ -191,7 +191,7 @@ menu-icon{
     position: relative;
     width: 300px;
     height: 400px;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(31, 36, 45, 0.75);
     border-radius: 20px;
     display: flex;
     justify-content: center;
