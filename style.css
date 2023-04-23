@@ -182,14 +182,14 @@ menu-icon{
   }
   
   #about img {
-    width: 275px;
+    width: 258px;
     height: 390px;
     border-radius: 20px;
   }
   .col-md-6{
-    padding: 10px;
+    padding: 0px;
     position: relative;
-    width: 300px;
+    width: 290px;
     height: 400px;
     background: rgba(31, 36, 45, 0.75);
     border-radius: 20px;
@@ -223,7 +223,7 @@ menu-icon{
   }.col-md-6 .frame{
     position: absolute;
     inset: 5px;
-    border-radius: 16px;
+    border-radius: 20px;
     background: var(--bg-color);
     z-index: 1;
   }.about .container .row{
