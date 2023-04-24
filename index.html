@@ -155,14 +155,14 @@
       <div class="row100">
         <div class="col">
           <div class="inputbox">
-            <input type="text" name="name" required="required">
+            <input type="text" name="name" id="name" required="required">
             <span class="text">First Name</span>
             <span class="line"></span>
           </div>
         </div>
         <div class="col">
           <div class="inputbox">
-            <input type="text" name="" required="required">
+            <input type="text" name="name1" id="name1" required="required">
             <span class="text">Last Name</span>
             <span class="line"></span>
           </div>
@@ -171,14 +171,14 @@
       <div class="row100">
         <div class="col">
           <div class="inputbox">
-            <input type="text" name="email" required="required">
+            <input type="text" name="email" id="email" required="required">
             <span class="text">Email</span>
             <span class="line"></span>
           </div>
         </div>
         <div class="col">
           <div class="inputbox">
-            <input type="text" name="" required="required">
+            <input type="text" name="tp" id="tp"required="required">
             <span class="text">Mobile Number</span>
             <span class="line"></span>
           </div>
@@ -187,7 +187,7 @@
       <div class="row100">
         <div class="col">
           <div class="inputbox">
-            <textarea required="required" name="message"></textarea>
+            <textarea required="required" name="message" id="message"></textarea>
             <span class="text">Type your message here..</span>
             <span class="line"></span>
           </div>
@@ -195,7 +195,7 @@
       </div>
       <div class="row100">
         <div class="col">
-          <a href="" type="submit" value="Send" class="neon">Submit</a>
+          <button class="neon" onclick="sendEmail()">Submit</button>
         </div>
       </div>
     </form>
@@ -233,16 +233,19 @@
 			event.preventDefault();
 			sendEmail();
 		});
-
-		function sendEmail() {
-			var name = document.getElementById('name').value;
+    function sendEmail() {
+      var recipient = "lcviduranga456@gmail.com";
+      var name = document.getElementById('name').value;
+      var name1 = document.getElementById('name1').value;
+      var tp = document.getElementById('tp').value;
 			var email = document.getElementById('email').value;
 			var message = document.getElementById('message').value;
 			var subject = 'New contact form submission from ' + name;
-			var body = 'Name: ' + name + '%0D%0AEmail: ' + email + '%0D%0AMessage: ' + message;
+			var body = 'Name: ' + name + name1 + '%0D%0AEmail: ' + email + '%0D%0AMessage: ' + message+ '%0D%0AMobilenumber: ' + tp;
 
-			window.location.href = 'mailto:lcviduranga456@gmail.com=' + subject + '&body=' + body;
-		}
+          
+            window.location.href = "mailto:" + recipient + "?subject=" + subject + "&body=" + body;
+          }
 	</script>
    
 </body>
