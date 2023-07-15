@@ -54,6 +54,7 @@ menu-icon{
     padding-top: 200px;
     justify-content: space-between;
     align-items: center;
+    z-index: 3;
     
 }.auto-typed{
     color:#d400d4;
@@ -361,6 +362,8 @@ menu-icon{
 }.Portfolio .drop:nth-child(5){
     border-radius: 35% 65% 31% 69% / 57% 59% 41% 43%;
 }.Portfolio .drop:nth-child(6){
+    border-radius: 35% 65% 31% 69% / 57% 59% 41% 43%;
+}.Portfolio .drop:nth-child(7){
     border-radius: 35% 65% 31% 69% / 57% 59% 41% 43%;
 }.Portfolio .drop:hover{
     border-radius: 50%;
